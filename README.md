@@ -1,5 +1,11 @@
 # gpush
 用于快速将项目中的所有改变push到代码仓库
+替代以下操作：
+```
+git add .
+git commit -m ""
+git push
+```
 ## 使用说明：
 * 1.将gpush文件放入 /usr/bin 目录中
 * 2.在终端中直接使用 gpush 命令即可
