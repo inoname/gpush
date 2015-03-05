@@ -9,6 +9,6 @@
 # 如果提示没有执行权限，执行 chmod 744 gpush 即可
 
 read -p "Please input commit message:" message
-git add --ignore-removal .
+git add --all .
 git commit -m $message
 git push
