@@ -8,7 +8,12 @@
 
 # 如果提示没有执行权限，执行 chmod 744 gpush 即可
 
-read -p "Please input commit message:" message
+read -p "If need,input commit message:" message
 git add --all .
-git commit -m $message
+
+if ["$message" == ""];then
+    git commit
+else
+    git commit -m $message
+fi
 git push
