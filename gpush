@@ -10,5 +10,9 @@
 
 read -p "Please input commit message:" message
 git add --all .
-git commit -m $message
+if [ "$message" == "" ];then
+    git commit -m "initial"
+else
+    git commit -m $message
+fi
 git push
