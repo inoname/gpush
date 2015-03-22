@@ -11,3 +11,5 @@ git push
 
 ---
 如果提示没有执行权限，执行 chmod 744 gpush
+
+![image](https://github.com/kouliang/gpush/blob/master/gpush.gif)
